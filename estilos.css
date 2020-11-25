@@ -1,0 +1,49 @@
+body {
+    background-color: white;
+}
+
+p {
+    color: black;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div {
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul, ol {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li {
+    padding: 3px;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#ingredientes {
+    font-weight: bolder;
+}
+
+#receitas {
+    padding: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+    text-align: center;
+}
+
+.into_ingredientes {
+    padding: 10px;
+}
+
+.logo {
+    width: 40%;
+}
+
+.logo-align {
+    text-align: center;
+}
