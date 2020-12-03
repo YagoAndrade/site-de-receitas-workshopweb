@@ -25,8 +25,33 @@ h1, h2, h3, h4, h5 {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+    background-color: white; /*Em branco para não interferir com o fundo da logo*/
+}
+
+#header_ingrediente {
+    text-align: center;
+}
+
+#imagem {
+    height: 340px;
+    width: 600px;
+}
+
 #ingredientes {
     font-weight: bolder;
+    font-size: x-large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: blue;
+    text-align: center;
+}
+
+#ingredientes_internos {
+    font-weight: bold;
+    font-size: larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: blue;
+    text-align: center;
 }
 
 #receitas {
@@ -46,4 +71,44 @@ h1, h2, h3, h4, h5 {
 
 .logo-align {
     text-align: center;
+}
+
+.container_um {
+    padding: 2px;
+    width: auto;
+    height: 100%;  
+    margin: 20px auto;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    background: whitesmoke;
+    border: 2px solid black;
+    box-shadow: 3px 3px;
+}
+
+.container_dois {
+    padding: 2px;
+    width: auto;
+    height: 100%;  
+    margin: 20px auto;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    background: whitesmoke;
+    border: 2px solid black;
+    box-shadow: 3px 3px;
+}
+
+.container_tres {
+    padding: 2px;
+    width: auto;
+    height: 100%;  
+    margin: 20px auto;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    background: whitesmoke;
+    border: 2px solid black;
+    box-shadow: 3px 3px;
+}
+
+.formatacao {
+    margin-left: 10px;
 }
