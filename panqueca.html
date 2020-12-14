@@ -4,6 +4,7 @@
         <meta charset='utf-8'>
         <title>Ratatouille Receitas</title>
         <link rel="stylesheet" href="./estilos.css"/> 
+        <script src="app.js"></script>
         <div class = "logo-align"> <!--Logotipo do site-->
             <a href="index.html">
                 <img alt="Logotipo do site" src="logo.jpg" class="logo"/>
@@ -16,7 +17,7 @@
             <a href="panqueca.html">
                 <img src="https://s2.glbimg.com/LTG6LRancs5ka76JSXmffAethrU=/0x0:1920x1280/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_e84042ef78cb4708aeebdf1c68c6cbd6/internal_photos/bs/2020/9/g/aRUeltQHKMVGlsZmSghw/panqueca.jpg" title = "Panqueca de carne moída — Foto: Reprodução da Internet" alt = "Duas panquecas de carne moída com um pouco de alface, num prato branco." id="imagem">
             </a>
-            <a href="https://www.tudogostoso.com.br/receita/760-panqueca-de-carne-moida.html" target="blank"><div>Acesse a receita original no TudoGostoso</div></a>
+            <a href="https://www.tudogostoso.com.br/receita/760-panqueca-de-carne-moida.html" target="blank"><div class="rodape_class">Acesse a receita original no TudoGostoso</div></a>
         </div>
         <div class="container_dois">
             <h2 id="ingredientes">Ingredientes</h2>
@@ -82,5 +83,23 @@
                 <li>Por isso que o molho não pode ficar muito grosso, por que se ficar a massa irá absorver todo o molho e o prato vai ficar com um aspecto de seco.</li>
             </ol>
         </div>
+        <script>        
+			const zeroFill = n => {
+				return ('0' + n).slice(-2);
+			}
+
+			const interval = setInterval(() => {				
+				var hoje = new Date();
+				var data = zeroFill(hoje.getDate()) + '/' + zeroFill((hoje.getMonth() + 1)) + '/' + hoje.getFullYear() + ' ' + zeroFill(hoje.getHours()) + ':' + zeroFill(hoje.getMinutes()) + ':' + zeroFill(hoje.getSeconds());
+				document.getElementById('dataehorario').innerHTML = data;
+			}, 1000);
+          
+        </script>
+        
+        <footer id = "footer">
+            <div id = "footer"><p id = "rodape" class = "rodape_class_pag_inicial">Criado por Yago Andrade.</p></div>
+            <span id = "footer"><p id = "rodape" class = "rodape_class">Acessado em: </p></span>
+            <span id = "footer"><p id="dataehorario" class="rodape"></p></span>
+        </footer>
     </body>
 </html>

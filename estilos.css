@@ -33,6 +33,18 @@ body {
     text-align: center;
 }
 
+#footer.sticktobottom {
+    position: fixed;
+    bottom:0;
+    left: 0;
+    right:0;
+}
+
+#rodape {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
 #imagem {
     height: 340px;
     width: 600px;
@@ -80,9 +92,9 @@ body {
     margin: 20px auto;
     margin-top: 30px;
     margin-bottom: 15px;
-    background: whitesmoke;
-    border: 2px solid black;
-    box-shadow: 3px 3px;
+    background: white;
+    border: 2px solid blueviolet;
+    box-shadow: 3px 3px blue;
 }
 
 .container_dois {
@@ -92,9 +104,9 @@ body {
     margin: 20px auto;
     margin-top: 30px;
     margin-bottom: 15px;
-    background: whitesmoke;
-    border: 2px solid black;
-    box-shadow: 3px 3px;
+    background: white;
+    border: 2px solid blueviolet;
+    box-shadow: 3px 3px blue;
 }
 
 .container_tres {
@@ -104,9 +116,26 @@ body {
     margin: 20px auto;
     margin-top: 30px;
     margin-bottom: 15px;
-    background: whitesmoke;
-    border: 2px solid black;
-    box-shadow: 3px 3px;
+    background: white;
+    border: 2px solid blueviolet;
+    box-shadow: 3px 3px blue;
+}
+
+.rodape_class_pag_inicial {
+    font-size: small;
+    margin-top: 15%;
+    margin-bottom: 10px;
+}
+.rodape{
+    text-align: center;
+    font-size: small;
+}
+
+.rodape_class {
+    text-align: center;
+    font-size: small;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .formatacao {

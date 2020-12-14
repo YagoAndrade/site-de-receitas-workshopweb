@@ -4,12 +4,14 @@
         <meta charset='utf-8'>
         <title>Ratatouille Receitas</title>
         <link rel="stylesheet" href="./estilos.css"/>
+        <script src="app.js"></script>
         <div class = "logo-align"> <!--Logotipo do site-->
             <a href="index.html">
                 <img alt="Logotipo do site" src="logo.jpg" class="logo"/>
             </a>
         </div>
     </head>
+
     <body>
         <p>Escolha uma de nossas saborosas receitas para tentar hoje mesmo!</p>
         <p>O que você quer fazer hoje?</p>
@@ -18,5 +20,25 @@
             <li><span id="receitas"><a href="brownie.html" target="_blank">Brownie Vapt-vupt</a></span></li>
             <li><span id="receitas"><a href="panqueca.html" target="_blank">Panqueca de Carne Moída</a></span></li>
         </ul>
+
+        <script>        
+			const zeroFill = n => {
+				return ('0' + n).slice(-2);
+			}
+
+			const interval = setInterval(() => {				
+				var hoje = new Date();
+				var data = zeroFill(hoje.getDate()) + '/' + zeroFill((hoje.getMonth() + 1)) + '/' + hoje.getFullYear() + ' ' + zeroFill(hoje.getHours()) + ':' + zeroFill(hoje.getMinutes()) + ':' + zeroFill(hoje.getSeconds());
+				document.getElementById('dataehorario').innerHTML = data;
+			}, 1000);
+          
+        </script>
+        
+        <footer id = "footer">
+            <div id = "footer"><p id = "rodape" class = "rodape_class_pag_inicial">Criado por Yago Andrade.</p></div>
+            <span id = "footer"><p id = "rodape" class = "rodape_class">Acessado em: </p></span>
+            <span id = "footer"><p id="dataehorario" class="rodape"></p></span>
+        </footer>
+
     </body>
 </html>

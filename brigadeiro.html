@@ -4,6 +4,7 @@
         <meta charset='utf-8'>
         <title>Ratatouille Receitas</title>
         <link rel="stylesheet" href="./estilos.css"/> 
+        <script src="app.js"></script>
         <div class = "logo-align"> <!--Logotipo do site-->
             <a href="index.html">
                 <img alt="Logotipo do site" src="logo.jpg" class="logo"/>
@@ -17,7 +18,7 @@
                 <img src="https://www.receitasnestle.com.br/images/default-source/recipes/brigadeiro_alta.jpg" title = "Brigadeiro — Foto: Reprodução da Internet" alt = "Vários brigadeiros simples, em cima de um prato branco." id="imagem">
             </a>
             <a href="https://www.tudogostoso.com.br/receita/114-brigadeiro.html" target="blank">
-                <div>Acesse a receita original no TudoGostoso</div>
+                <div class="rodape_class">Acesse a receita original no TudoGostoso</div>
             </a>
         </div> 
         <div class="container_dois">
@@ -37,5 +38,25 @@
                 <li>Deixe esfriar e faça pequenas bolas com a mão passando a massa no chocolate granulado.</li>           
             </ol>
         </div>
+
+        <script>        
+			const zeroFill = n => {
+				return ('0' + n).slice(-2);
+			}
+
+			const interval = setInterval(() => {				
+				var hoje = new Date();
+				var data = zeroFill(hoje.getDate()) + '/' + zeroFill((hoje.getMonth() + 1)) + '/' + hoje.getFullYear() + ' ' + zeroFill(hoje.getHours()) + ':' + zeroFill(hoje.getMinutes()) + ':' + zeroFill(hoje.getSeconds());
+				document.getElementById('dataehorario').innerHTML = data;
+			}, 1000);
+          
+        </script>
+        
+        <footer id = "footer">
+            <div id = "footer"><p id = "rodape" class = "rodape_class_pag_inicial">Criado por Yago Andrade.</p></div>
+            <span id = "footer"><p id = "rodape" class = "rodape_class">Acessado em: </p></span>
+            <span id = "footer"><p id="dataehorario" class="rodape"></p></span>
+        </footer>
+
     </body>
 </html>
